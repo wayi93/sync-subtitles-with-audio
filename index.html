@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SYNC</title>
+    <script type="text/javascript" src="./assets/js/audiosync.js"></script>
+</head>
+<body>
+    <audio id="audiofile" controls="controls" preload>
+        <source src="./uploads/audios/test.ogg" type="audio/ogg">
+        <source src="./uploads/audios/test.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="subtitles"></div>
+    <script>
+        audioSync.init('audiofile', 'subtitles', [
+            { "end": "0.225","start": "0.125","text": "There" },
+            {"end": "0.485","start": "0.225","text": "were" },
+            {"end": "1.085","start": "0.485","text": "10 in" },
+            {"end": "1.325","start": "1.085","text": "his" },
+            {"end": "1.685","start": "1.325","text": "bed" },
+            {"end": "1.965","start": "1.685","text": "and the" },
+            {"end": "2.245","start": "1.965","text": "little" },
+            {"end": "2.565","start": "2.245","text": "one" },
+            {"end": "2.985","start": "2.565","text": "said" },
+            {"end": "3.485","start": "2.985","text": "Roll" },
+            {"end": "3.965","start": "3.485","text": "over!" },
+            {"end": "4.805","start": "3.965","text": "Roll" },
+            {"end": "5.405","start": "4.805","text": "over!" }
+        ]);
+    </script>
+
+<script>
+</script>
+</body>
+</html>
